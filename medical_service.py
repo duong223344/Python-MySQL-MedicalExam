@@ -127,10 +127,10 @@ def add_doctors_from_keyboard(cursor):
 # Question 3: Add 3 appointments for 3 patients (2 marks)
 # ===========================================================================
 def add_appointment(cursor, appointment_no):
-    """Insert one appointment from keyboard (one patient per appointment)."""
+    """Insert one appointment from keyboard (one appointment per patient)."""
     print(f"\n--- Appointment {appointment_no}/3 ---")
-    print(f"Enter patient_id = {appointment_no} (3 appointments for 3 patients)")
-    patient_id = int(input("Patient ID: ").strip())
+    patient_id = appointment_no  # 3 appointments for 3 patients (id 1, 2, 3)
+    print(f"Patient ID: {patient_id}")
     doctor_id = int(input("Doctor ID: ").strip())
     appointment_date = input(
         "Appointment date (YYYY-MM-DD HH:MM:SS): "

@@ -22,11 +22,14 @@ Medical Service System – Developing Applications with Python (Exam SET01)
 | `medical_service.py` | Database connection and all functions (Q1–Q5) |
 | `medical_service.sql` | Database schema |
 
-## Exam functions
+## Exam marking schema (15 marks)
 
-1. `connect_db()` – Connection to database
-2. `add_patients_from_keyboard()` – Add 3 patients
-3. `add_doctors_from_keyboard()` – Add 5 doctors
-4. `add_appointments_from_keyboard()` – Add 3 appointments
-5. `make_report()` – Appointment report
-6. `get_appointments_today()` – Today's appointments
+| Question | Marks | Function |
+|----------|-------|----------|
+| 1 Connection to database | 1 | `connect_db()` |
+| 2 Insert patients | 3 | `add_patients_from_keyboard()` |
+| 2 Insert doctors | 3 | `add_doctors_from_keyboard()` |
+| 3 Insert appointments | 2 | `add_appointments_from_keyboard()` |
+| 4 Make a report | 3 | `make_report()` |
+| 5 Get appointments today | 2 | `get_appointments_today()` |
+| Bonus coding convention | 1 | Clear structure, `%s`, try/except |
